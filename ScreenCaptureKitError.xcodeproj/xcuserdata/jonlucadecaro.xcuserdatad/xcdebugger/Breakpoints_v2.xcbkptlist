@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7FB1C662-D1FD-4A85-A2AD-B89EBB9D4BEA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B336FAF-9FDE-4BD3-8D25-5C3A89CC0E4F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScreenCaptureKitError/MeetingEngine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "start(displayId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E2E15440-A77F-46B6-90CF-91950FFA4E3E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScreenCaptureKitError/MeetingEngine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "start(displayId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E2E15440-A77F-46B6-90CF-91950FFA4E3E - 8341ff275795e91b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for ScreenCaptureKitError.MeetingController.start(displayId: Swift.UInt32) async -&gt; ()"
+                  moduleName = "ScreenCaptureKitError"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonlucadecaro/Documents/Other/ScreenCaptureKitError/ScreenCaptureKitError/MeetingEngine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "772">
+               </Location>
+               <Location
+                  uuid = "E2E15440-A77F-46B6-90CF-91950FFA4E3E - cd8e660ba97c2d19"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for ScreenCaptureKitError.MeetingController.start(displayId: Swift.UInt32) async -&gt; ()"
+                  moduleName = "ScreenCaptureKitError"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonlucadecaro/Documents/Other/ScreenCaptureKitError/ScreenCaptureKitError/MeetingEngine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "576">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
