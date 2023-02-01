@@ -14,8 +14,8 @@
             filePath = "ScreenCaptureKitError/MeetingEngine.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "start(displayId:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -24,19 +24,19 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E2E15440-A77F-46B6-90CF-91950FFA4E3E"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScreenCaptureKitError/MeetingEngine.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "start(displayId:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "E2E15440-A77F-46B6-90CF-91950FFA4E3E - 8341ff275795e91b"
+                  uuid = "E2E15440-A77F-46B6-90CF-91950FFA4E3E - 8341ff275795e93a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -46,12 +46,12 @@
                   urlString = "file:///Users/jonlucadecaro/Documents/Other/ScreenCaptureKitError/ScreenCaptureKitError/MeetingEngine.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "133"
-                  endingLineNumber = "133"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
                   offsetFromSymbolStart = "772">
                </Location>
                <Location
-                  uuid = "E2E15440-A77F-46B6-90CF-91950FFA4E3E - cd8e660ba97c2d19"
+                  uuid = "E2E15440-A77F-46B6-90CF-91950FFA4E3E - cd8e660ba97c2d38"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -61,11 +61,27 @@
                   urlString = "file:///Users/jonlucadecaro/Documents/Other/ScreenCaptureKitError/ScreenCaptureKitError/MeetingEngine.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "133"
-                  endingLineNumber = "133"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
                   offsetFromSymbolStart = "576">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "556BD5EA-AB88-4DEE-855D-1D8D1C1D3418"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScreenCaptureKitError/MeetingRecorder.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "recordVideo(sampleBuffer:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

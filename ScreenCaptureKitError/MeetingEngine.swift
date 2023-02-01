@@ -9,6 +9,7 @@ import Combine
 import OSLog
 class MeetingController: ObservableObject {
     private let captureEngine = CaptureEngine()
+    var meetingRecorder: MeetingRecorder = MeetingRecorder()
     let logger = Logger()
     var startTime = Date()
     var isRunning = false
@@ -132,7 +133,7 @@ class MeetingController: ObservableObject {
         let config = streamConfiguration
         let filter = contentFilter
         isRunning = true
-        captureEngine.startCapture(configuration: config, filter: filter)
+        captureEngine.startCapture(configuration: config, filter: filter, meetingRecorder: meetingRecorder)
     }
 
     /// Stops capturing screen content.
@@ -148,7 +149,7 @@ class MeetingController: ObservableObject {
 /// An object that wraps an instance of `SCStream`, and returns its results as an `AsyncThrowingStream`.
 class CaptureEngine: NSObject, @unchecked Sendable {
 
-    var meetingRecorder: MeetingRecorder = MeetingRecorder()
+    var meetingRecorder: MeetingRecorder?
 
     private var stream: SCStream?
     private let videoSampleBufferQueue = DispatchQueue(label: "com.example.apple-samplecode.VideoSampleBufferQueue")
@@ -157,13 +158,13 @@ class CaptureEngine: NSObject, @unchecked Sendable {
     private var startTime = Date()
 
     /// - Tag: StartCapture
-    func startCapture(configuration: SCStreamConfiguration, filter: SCContentFilter) {
+    func startCapture(configuration: SCStreamConfiguration, filter: SCContentFilter, meetingRecorder: MeetingRecorder) {
         // The stream output object.
         let streamOutput = CaptureEngineStreamOutput()
-        streamOutput.recorder = self.meetingRecorder
+        streamOutput.recorder = meetingRecorder
         self.meetingRecorder = streamOutput.recorder!
         self.startTime = Date()
-        self.meetingRecorder.startRecording(height: Int(configuration.height), width: Int(configuration.width))
+        self.meetingRecorder!.startRecording(height: Int(configuration.height), width: Int(configuration.width))
 
         do {
             stream = SCStream(filter: filter, configuration: configuration, delegate: streamOutput)
@@ -184,7 +185,7 @@ class CaptureEngine: NSObject, @unchecked Sendable {
         } catch {
             logger.error("Failed to stop the stream session: \(String(describing: error))")
         }
-        return await meetingRecorder.stopRecording()
+        return await meetingRecorder!.stopRecording()
     }
     
     let logger = Logger()

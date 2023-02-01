@@ -31,6 +31,7 @@
 		08887641298A197A0009E040 /* MeetingRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingRecorder.swift; sourceTree = "<group>"; };
 		08887642298A197A0009E040 /* MeetingEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingEngine.swift; sourceTree = "<group>"; };
 		08887645298A1A030009E040 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		08887647298A1CAF0009E040 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +48,7 @@
 		0888762E298A19610009E040 = {
 			isa = PBXGroup;
 			children = (
+				08887647298A1CAF0009E040 /* README.md */,
 				08887639298A19610009E040 /* ScreenCaptureKitError */,
 				08887638298A19610009E040 /* Products */,
 			);

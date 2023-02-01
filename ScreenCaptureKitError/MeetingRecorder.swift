@@ -29,13 +29,13 @@ class MeetingRecorder {
         let audioDir = Constants.audioDirectory()
         let directoryURL = audioDir.appendingPathComponent(dir)
         Constants.ensureDirectory(dir: directoryURL)
-        return directoryURL.appendingPathComponent(file).appendingPathExtension("mp4")
+        return directoryURL.appendingPathComponent(file).appendingPathExtension("mov")
     }
 
     func startRecording(height: Int, width: Int) {
         // Create an asset writer that records to a temporary file
         let filePath = getNextAudioPath()
-        guard let assetWriter = try? AVAssetWriter(url: filePath, fileType: .mp4) else {
+        guard let assetWriter = try? AVAssetWriter(url: filePath, fileType: .mov) else {
             return
         }
 
